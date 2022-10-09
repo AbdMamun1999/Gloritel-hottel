@@ -26,9 +26,9 @@ const OurServices = () => {
   return (
     <div>
       <div>
-        <h1 className="text-[53px] leading-[80px] mt-10">Benefits of using our services</h1>
+        <h1 className="text-4xl lg:text-[53px] lg:leading-[80px] mt-10">Benefits of using our services</h1>
       </div>
-      <div className=" mt-12 flex flex-col gap-y-6">
+      <div className=" mt-2 lg:mt-12 flex flex-col gap-y-6">
         {services.map((service, index) => (
           <OurService key={index} service={service} />
         ))}

@@ -7,8 +7,8 @@ const CustomerFeedback = ({ customer }) => {
         <img src={customer.img} alt="" className="mx-auto"/>
       </div>
       <div>
-        <h1>{customer.name}</h1>
-        <p>{customer.comment}</p>
+        <h1 className="text-[22px]">{customer.name}</h1>
+        <p className="text-[16px]">{customer.comment}</p>
       </div>
     </div>
   );

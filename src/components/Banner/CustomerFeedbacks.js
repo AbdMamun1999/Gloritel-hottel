@@ -29,12 +29,14 @@ const CustomerFeedbacks = () => {
 
   return (
     <div className="w-[80%] mx-auto">
-      <div className="flex flex-row justify-between items-center mt-10">
+      <div className="flex sm:flex-col md:flex-row justify-between items-center mt-10">
         <div>
           <h1 className="text-2xl">Our Customer Feedback</h1>
-          <p className="text-[22px]">Don’t take our word for it. Trust our customers</p>
+          <p className="text-[22px]">
+            Don’t take our word for it. Trust our customers
+          </p>
         </div>
-        <div className="flex flex-row gap-5">
+        <div className="flex flex-row gap-x-5 gap-y-2">
           <button type="button" className="flex gap-1 items-center border">
             <span>
               <FaChevronLeft />
@@ -49,7 +51,7 @@ const CustomerFeedbacks = () => {
           </button>
         </div>
       </div>
-      <div className="grid grid-cols-3 gap-5">
+      <div className="grid sm:grid-cols-1x lg:grid-cols-3 gap-5">
         {customers.map((customer, index) => (
           <CustomerFeedback key={index + 1} customer={customer} />
         ))}
