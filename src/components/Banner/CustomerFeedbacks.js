@@ -1,31 +1,10 @@
 import React from "react";
 import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
-import imgOne from "../../images/clients/Rectangle729.png";
-import imgTwo from "../../images/clients/Rectangle730.png";
-import imgThree from "../../images/clients/Rectangle731.png";
+
 import CustomerFeedback from "./CustomerFeedback";
 
 const CustomerFeedbacks = () => {
-  const customers = [
-    {
-      name: "Floyd Miles",
-      img: imgOne,
-      comment:
-        "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.",
-    },
-    {
-      name: "Ronald Richards",
-      img: imgTwo,
-      comment:
-        "ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.",
-    },
-    {
-      name: "Savannah Nguyen",
-      img: imgThree,
-      comment:
-        "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet. Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam...",
-    },
-  ];
+ 
 
   return (
     <div className="w-[80%] mx-auto">
@@ -51,11 +30,14 @@ const CustomerFeedbacks = () => {
           </button>
         </div>
       </div>
-      <div className="grid sm:grid-cols-1x lg:grid-cols-3 gap-5">
-        {customers.map((customer, index) => (
+      <CustomerFeedback></CustomerFeedback>
+      
+        {/* <div className="grid sm:grid-cols-1x lg:grid-cols-3 gap-5"> */}
+        {/* {customers.map((customer, index) => (
           <CustomerFeedback key={index + 1} customer={customer} />
-        ))}
-      </div>
+        ))} */}
+        {/* </div> */}
+      
     </div>
   );
 };
