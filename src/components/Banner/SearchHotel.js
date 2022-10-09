@@ -4,18 +4,18 @@ const SearchHotel = () => {
   const [payValue, setPayValue] = useState(false);
   const options = ["lahor"];
   return (
-    <div className="bg-secondary w-[537px] flex flex-col gap-y-5 rounded-lg box-border p-6 shadow-lg">
+    <div className="bg-secondary lg:w-[537px] flex flex-col lg:gap-y-5 rounded-lg box-border p-6 shadow-lg ">
       <div className="flex flex-col">
         <label>Where you go?</label>
         <input type="text" className="py-2 px-5 outline-none rounded-md" />
       </div>
-      <div className="flex flex-row justify-between">
+      <div className="flex flex-row gap-x-4 justify-between">
         <div className="flex flex-col">
-          <label>Check in</label>
+          <label className="text-white">Check in</label>
           <input type="text" className="py-2 px-5 outline-none rounded-md" />
         </div>
         <div className="flex flex-col">
-          <label>Check out</label>
+          <label className="text-white">Check out</label>
           <input type="text" className="py-2 px-5 outline-none rounded-md" />
         </div>
       </div>
